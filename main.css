@@ -18,12 +18,12 @@ button {
 }
 
 .container {
- width: 1152px;
+ width: 100%;
  margin: auto;
 }
 
 /* end General style  */
-
+/* start header Style  */
 .header {
  height: 30px;
  background-color: #52C996;
@@ -46,7 +46,7 @@ button {
  position: absolute;
  width: 61.24px;
  height: 66.85px;
- left: 1036.71px;
+ right: 24px;
  top: -12.28px;
  z-index: -1;
  background: linear-gradient(89.73deg, #111213 4.84%, #021D2E 109.55%);
@@ -71,7 +71,7 @@ button {
  position: absolute;
  width: 61.24px;
  height: 66.85px;
- left: 939.71px;
+ right: 149px;
  top: -15.28px;
  z-index: -1;
  background: linear-gradient(89.73deg, #111213 4.84%, #021D2E 109.55%);
@@ -123,7 +123,8 @@ button {
  -webkit-text-fill-color: transparent;
  -webkit-background-clip: text;
 }
-
+/* end header Style  */
+/* start content Style  */
 .content .container {
  background-color: #52C996;
 }
@@ -134,6 +135,7 @@ button {
  justify-content: center;
  align-items: center;
  height: 427px;
+ margin-left: 50px;
 }
 
 .btn-list {
@@ -155,13 +157,21 @@ button {
  position: absolute;
  width: 61.24px;
  height: 66.85px;
- right: 108px;
- top: 0;
- z-index: -1;
+ z-index: 1;
  background: linear-gradient(89.73deg, #111213 4.84%, #021D2E 109.55%);
- opacity: 0.27;
+ opacity: 0.50;
  filter: blur(26px);
  transform: matrix(0.67, -0.78, 0.71, 0.67, 0, 0);
+}
+
+.lrshadow {
+ top: 0;
+ left: -6px;
+}
+
+.llshadow {
+ top: 0;
+ left: -18px;
 }
 
 .btn-list span {
@@ -173,6 +183,10 @@ button {
  text-align: left;
  flex-grow: 1;
  margin-left: 45px;
+}
+
+.list-lift-content {
+ position: relative;
 }
 
 .list-center {
@@ -213,6 +227,7 @@ button {
  background: #F8F8F8;
  box-shadow: inset 8px -15px 17px rgba(0, 0, 0, 0.32), inset -18px 11px 16px rgba(255, 255, 255, 0.94);
  cursor: pointer;
+ z-index: 2;
 }
 
 .image {
@@ -234,18 +249,18 @@ button {
 }
 
 .list-center .list-center-b {
- left: 340px;
+ right: -12px;
  top: 32px;
 }
 
 .list-center .list-center-c {
- left: -23px;
- top: 249px;
+ left: -19px;
+ top: 243px;
 }
 
 .list-center .list-center-d {
- left: 340px;
- top: 249px;
+ right: -12px;
+ top: 243px;
 }
 
 .list-center .list-center-e {
@@ -257,16 +272,39 @@ button {
  z-index: 2;
 }
 
-.list-center-e-shadow {
+.allshadow {
  position: absolute;
  width: 116.29px;
  height: 166.68px;
- left: 7px;
- top: 42.99px;
  background: linear-gradient(89.73deg, #111213 4.84%, #021D2E 109.55%);
- opacity: 0.47;
+ opacity: 0.55;
  filter: blur(45px);
  transform: matrix(0.67, -0.72, 0.77, 0.67, 0, 0);
+}
+
+.list-center-a-shadow {
+ left: -40px;
+ top: 20.99px;
+}
+
+.list-center-b-shadow {
+ right: -18px;
+ top: 20.99px;
+}
+
+.list-center-c-shadow {
+ left: -40px;
+ top: 220.99px;
+}
+
+.list-center-d-shadow {
+ right: -18px;
+ top: 220.99px;
+}
+
+.list-center-e-shadow {
+ left: 33%;
+ top: 149.99px;
 }
 
 .list-right {
@@ -291,6 +329,10 @@ button {
  margin: 10px;
 }
 
+.btn-menu-content {
+ position: relative;
+}
+
 .btn-menu {
  position: relative;
  width: 60px;
@@ -301,6 +343,7 @@ button {
  left: 4px;
  background: #F8F8F8;
  box-shadow: inset 8px -15px 17px rgba(0, 0, 0, 0.32), inset -18px 11px 16px rgba(255, 255, 255, 0.94);
+ z-index: 2;
 }
 
 .btn-menu img {
@@ -309,3 +352,9 @@ button {
  top: 50%;
  transform: translate(-50%, -50%);
 }
+
+.men-shadow {
+ left: 18px;
+ bottom: 90px;
+}
+/* end content Style  */
