@@ -194,6 +194,7 @@ button {
  border: 20px solid #fff;
  width: 400px;
  height: 400px;
+ max-width: 500px;
  text-align: center;
  flex-grow: 2;
  margin-top: -255px;
